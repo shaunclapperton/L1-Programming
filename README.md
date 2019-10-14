@@ -17,6 +17,25 @@
 
 
     <script>
+        var name = '';
+        while (name == '' || name == null) {
+            name = prompt('what is your name?') || ''; //this is the prompt that asks you for your name at the start of the game.
+
+        }
+
+
+        var difficulty = '';
+
+        while (difficulty != 'easy' && difficulty != 'medium' && difficulty != 'hard') {
+            difficulty = prompt('choose difficulty, Easy, Medium or Hard') || '';
+            difficulty.toLowerCase();
+            console.log(difficulty); //this is the prompt that chooses the difficulty of the game.
+        }
+
+
+
+
+
         var canvas, canvasContext;
 
 
@@ -229,3 +248,4 @@
 
 
 </body>
+
